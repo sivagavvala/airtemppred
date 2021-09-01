@@ -1,0 +1,452 @@
+ 2021-08-31 23:29:41,701 -INFO -  Starting the dataset loading
+ 2021-08-31 23:29:41,718 -INFO -  dataset loaded successfully
+ 2021-08-31 23:29:41,849 -INFO -  127.0.0.1 - - [31/Aug/2021 23:29:41] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-08-31 23:29:41,876 -INFO -  127.0.0.1 - - [31/Aug/2021 23:29:41] "[33mGET /style.css HTTP/1.1[0m" 404 -
+ 2021-08-31 23:31:21,218 -INFO -  Starting the dataset loading
+ 2021-08-31 23:31:21,241 -INFO -  dataset loaded successfully
+ 2021-08-31 23:31:21,247 -INFO -  could not create linear object model
+ 2021-08-31 23:31:21,247 -ERROR -  ('Type', 'Process_temp', 'Rotaional_speed', 'Tool_wear', 'Machine_failure', 'TWF', 'HDF', 'PWF', 'OSF', 'RNF')
+Traceback (most recent call last):
+  File "C:\Users\sivag\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 3080, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 70, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 101, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 4554, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 4562, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: ('Type', 'Process_temp', 'Rotaional_speed', 'Tool_wear', 'Machine_failure', 'TWF', 'HDF', 'PWF', 'OSF', 'RNF')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:/Users/sivag/PycharmProjects/AIPredictive_airtemp/app.py", line 32, in math_operation
+    x = df['Type', 'Process_temp', 'Rotaional_speed', 'Tool_wear', 'Machine_failure', 'TWF', 'HDF', 'PWF', 'OSF', 'RNF']
+  File "C:\Users\sivag\anaconda3\lib\site-packages\pandas\core\frame.py", line 3024, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 3082, in get_loc
+    raise KeyError(key) from err
+KeyError: ('Type', 'Process_temp', 'Rotaional_speed', 'Tool_wear', 'Machine_failure', 'TWF', 'HDF', 'PWF', 'OSF', 'RNF')
+ 2021-08-31 23:31:21,251 -ERROR -  Exception on /dbaction [POST]
+Traceback (most recent call last):
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ 2021-08-31 23:31:21,253 -INFO -  127.0.0.1 - - [31/Aug/2021 23:31:21] "[35m[1mPOST /dbaction HTTP/1.1[0m" 500 -
+ 2021-08-31 23:31:39,533 -INFO -  Starting the dataset loading
+ 2021-08-31 23:31:39,553 -INFO -  dataset loaded successfully
+ 2021-08-31 23:31:39,559 -INFO -  Model Object created successfully
+ 2021-08-31 23:31:39,585 -INFO -  127.0.0.1 - - [31/Aug/2021 23:31:39] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-08-31 23:31:39,615 -INFO -  127.0.0.1 - - [31/Aug/2021 23:31:39] "[33mGET /style.css HTTP/1.1[0m" 404 -
+ 2021-08-31 23:33:39,349 -INFO -  Starting the dataset loading
+ 2021-08-31 23:33:39,373 -INFO -  dataset loaded successfully
+ 2021-08-31 23:33:39,497 -INFO -  Model Object created successfully
+ 2021-08-31 23:33:39,541 -INFO -  127.0.0.1 - - [31/Aug/2021 23:33:39] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-08-31 23:33:39,570 -INFO -  127.0.0.1 - - [31/Aug/2021 23:33:39] "[33mGET /style.css HTTP/1.1[0m" 404 -
+ 2021-08-31 23:34:14,977 -INFO -  Starting the dataset loading
+ 2021-08-31 23:34:14,996 -INFO -  dataset loaded successfully
+ 2021-08-31 23:34:15,002 -INFO -  Model Object created successfully
+ 2021-08-31 23:34:15,707 -INFO -  Model fit done successfully
+ 2021-08-31 23:34:15,708 -INFO -  Predicting sample entry
+ 2021-08-31 23:34:15,708 -INFO -  Predicting Air temp from user entry
+ 2021-08-31 23:34:15,708 -INFO -  predicting the air temp...
+ 2021-08-31 23:34:15,708 -INFO -  sample entry predicted
+ 2021-08-31 23:34:15,738 -INFO -  127.0.0.1 - - [31/Aug/2021 23:34:15] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-08-31 23:34:15,763 -INFO -  127.0.0.1 - - [31/Aug/2021 23:34:15] "[33mGET /style.css HTTP/1.1[0m" 404 -
+ 2021-08-31 23:35:38,364 -INFO -  Starting the dataset loading
+ 2021-08-31 23:35:38,389 -INFO -  dataset loaded successfully
+ 2021-08-31 23:35:38,395 -INFO -  Model Object created successfully
+ 2021-08-31 23:35:38,409 -INFO -  Model fit done successfully
+ 2021-08-31 23:35:38,409 -INFO -  Predicting sample entry
+ 2021-08-31 23:35:38,410 -INFO -  Predicting Air temp from user entry
+ 2021-08-31 23:35:38,410 -INFO -  predicting the air temp...
+ 2021-08-31 23:35:38,410 -INFO -  sample entry predicted
+ 2021-08-31 23:35:38,447 -INFO -  127.0.0.1 - - [31/Aug/2021 23:35:38] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-08-31 23:38:05,103 -INFO -  Starting the dataset loading
+ 2021-08-31 23:38:05,127 -INFO -  dataset loaded successfully
+ 2021-08-31 23:38:05,134 -INFO -  Model Object created successfully
+ 2021-08-31 23:38:05,145 -INFO -  Model fit done successfully
+ 2021-08-31 23:38:05,145 -INFO -  Predicting sample entry
+ 2021-08-31 23:38:05,145 -INFO -  Predicting Air temp from user entry
+ 2021-08-31 23:38:05,145 -INFO -  predicting the air temp...
+ 2021-08-31 23:38:05,146 -INFO -  sample entry predicted
+ 2021-08-31 23:38:05,146 -INFO -  127.0.0.1 - - [31/Aug/2021 23:38:05] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-08-31 23:40:01,014 -INFO -  could not create linear object model
+ 2021-08-31 23:40:01,014 -ERROR -  'module' object is not callable
+Traceback (most recent call last):
+  File "C:/Users/sivag/PycharmProjects/AIPredictive_airtemp/app.py", line 28, in math_operation
+    df = preprocess_dataset()
+TypeError: 'module' object is not callable
+ 2021-08-31 23:40:01,015 -ERROR -  Exception on /dbaction [POST]
+Traceback (most recent call last):
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ 2021-08-31 23:40:01,017 -INFO -  127.0.0.1 - - [31/Aug/2021 23:40:01] "[35m[1mPOST /dbaction HTTP/1.1[0m" 500 -
+ 2021-08-31 23:41:23,850 -INFO -  could not create linear object model
+ 2021-08-31 23:41:23,850 -ERROR -  name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:/Users/sivag/PycharmProjects/AIPredictive_airtemp/app.py", line 28, in math_operation
+    df = load_dataset()
+NameError: name 'load_dataset' is not defined
+ 2021-08-31 23:41:23,851 -ERROR -  Exception on /dbaction [POST]
+Traceback (most recent call last):
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ 2021-08-31 23:41:23,853 -INFO -  127.0.0.1 - - [31/Aug/2021 23:41:23] "[35m[1mPOST /dbaction HTTP/1.1[0m" 500 -
+ 2021-08-31 23:41:41,317 -INFO -  Starting the dataset loading
+ 2021-08-31 23:41:41,336 -INFO -  dataset loaded successfully
+ 2021-08-31 23:41:41,342 -INFO -  Model Object created successfully
+ 2021-08-31 23:41:41,352 -INFO -  Model fit done successfully
+ 2021-08-31 23:41:41,353 -INFO -  Predicting sample entry
+ 2021-08-31 23:41:41,353 -INFO -  Predicting Air temp from user entry
+ 2021-08-31 23:41:41,353 -INFO -  predicting the air temp...
+ 2021-08-31 23:41:41,353 -INFO -  sample entry predicted
+ 2021-08-31 23:41:41,354 -INFO -  127.0.0.1 - - [31/Aug/2021 23:41:41] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-08-31 23:42:11,495 -INFO -  Starting the dataset loading
+ 2021-08-31 23:42:11,513 -INFO -  dataset loaded successfully
+ 2021-08-31 23:42:11,518 -INFO -  Model Object created successfully
+ 2021-08-31 23:42:11,530 -INFO -  Model fit done successfully
+ 2021-08-31 23:42:11,531 -INFO -  Predicting sample entry
+ 2021-08-31 23:42:11,531 -INFO -  Predicting Air temp from user entry
+ 2021-08-31 23:42:11,531 -INFO -  predicting the air temp...
+ 2021-08-31 23:42:11,531 -INFO -  sample entry predicted
+ 2021-08-31 23:42:11,531 -INFO -  127.0.0.1 - - [31/Aug/2021 23:42:11] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-08-31 23:47:42,114 -INFO -  Starting the dataset loading
+ 2021-08-31 23:47:42,131 -INFO -  dataset loaded successfully
+ 2021-08-31 23:47:42,137 -INFO -  Model Object created successfully
+ 2021-08-31 23:47:42,149 -INFO -  Model fit done successfully
+ 2021-08-31 23:47:42,150 -INFO -  Predicting sample entry
+ 2021-08-31 23:47:42,150 -INFO -  Predicting Air temp from user entry
+ 2021-08-31 23:47:42,150 -INFO -  predicting the air temp...
+ 2021-08-31 23:47:42,150 -INFO -  sample entry predicted
+ 2021-08-31 23:47:42,150 -INFO -  127.0.0.1 - - [31/Aug/2021 23:47:42] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-09-01 00:51:48,951 -INFO -  127.0.0.1 - - [01/Sep/2021 00:51:48] "[37mGET / HTTP/1.1[0m" 200 -
+ 2021-09-01 00:51:50,306 -INFO -  Starting the dataset loading
+ 2021-09-01 00:51:50,327 -INFO -  dataset loaded successfully
+ 2021-09-01 00:51:50,333 -INFO -  Model Object created successfully
+ 2021-09-01 00:51:50,336 -INFO -  Model fit done successfully
+ 2021-09-01 00:51:50,337 -INFO -  Predicting sample entry
+ 2021-09-01 00:51:50,337 -INFO -  Predicting Air temp from user entry
+ 2021-09-01 00:51:50,337 -INFO -  predicting the air temp...
+ 2021-09-01 00:51:50,337 -INFO -  sample entry predicted
+ 2021-09-01 00:51:50,337 -INFO -  127.0.0.1 - - [01/Sep/2021 00:51:50] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-09-01 00:51:52,967 -INFO -  Starting the dataset loading
+ 2021-09-01 00:51:52,987 -INFO -  dataset loaded successfully
+ 2021-09-01 00:51:52,994 -INFO -  linear regression model created
+ 2021-09-01 00:51:52,994 -ERROR -  Exception on /dbaction [POST]
+Traceback (most recent call last):
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ 2021-09-01 00:51:52,995 -INFO -  127.0.0.1 - - [01/Sep/2021 00:51:52] "[35m[1mPOST /dbaction HTTP/1.1[0m" 500 -
+ 2021-09-01 00:56:56,675 -INFO -  Starting the dataset loading
+ 2021-09-01 00:56:56,692 -INFO -  dataset loaded successfully
+ 2021-09-01 00:56:56,804 -INFO -  Model Object created successfully
+ 2021-09-01 00:56:56,829 -INFO -  Model fit done successfully
+ 2021-09-01 00:56:56,829 -INFO -  Predicting sample entry
+ 2021-09-01 00:56:56,829 -INFO -  Predicting Air temp from user entry
+ 2021-09-01 00:56:56,830 -INFO -  predicting the air temp...
+ 2021-09-01 00:56:56,831 -INFO -  sample entry predicted with simple LR 
+ 2021-09-01 00:56:56,861 -INFO -  127.0.0.1 - - [01/Sep/2021 00:56:56] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-09-01 01:02:42,971 -INFO -  Starting the dataset loading
+ 2021-09-01 01:02:42,988 -INFO -  dataset loaded successfully
+ 2021-09-01 01:02:43,001 -INFO -  Model Object created successfully
+ 2021-09-01 01:02:43,010 -INFO -  Model fit done successfully
+ 2021-09-01 01:02:43,011 -INFO -  Predicting sample entry
+ 2021-09-01 01:02:43,011 -INFO -  Predicting Air temp from user entry
+ 2021-09-01 01:02:43,011 -INFO -  predicting the air temp...
+ 2021-09-01 01:02:43,011 -INFO -  sample entry predicted with simple LR 
+ 2021-09-01 01:02:43,012 -INFO -  127.0.0.1 - - [01/Sep/2021 01:02:43] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-09-01 01:04:39,987 -INFO -  Starting the dataset loading
+ 2021-09-01 01:04:40,014 -INFO -  dataset loaded successfully
+ 2021-09-01 01:04:40,027 -INFO -  could not create linear object model
+ 2021-09-01 01:04:40,027 -ERROR -  Expected 2D array, got 1D array instead:
+array=[298.9 299.  298.9 299.  298.9 299.  298.1 298.2 298.6 298.9 298.9 299.
+ 299.  298.7 298.8 298.8 298.9 298.8 298.8 298.8 298.8 298.7 299.1 298.9
+ 298.1 298.8 298.8 298.9 298.8 298.8 298.9 299.  299.1 298.9 298.7 298.8
+ 298.8 298.9 299.  298.9 298.9 298.8 298.9 298.8 299.  298.8 298.9 298.1
+ 298.9 298.8 299.  298.6 298.2 299.  298.2 299.1 298.1 298.5 298.6 298.8
+ 298.8 298.6 298.9 298.8 298.6 298.9 298.7 298.8 298.4 298.8 298.8 299.
+ 298.8 299.  298.3].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+Traceback (most recent call last):
+  File "C:/Users/sivag/PycharmProjects/AIPredictive_airtemp/app.py", line 43, in math_operation
+    y_train = sc.fit_transform(y_train)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\sklearn\base.py", line 699, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\sklearn\preprocessing\_data.py", line 730, in fit
+    return self.partial_fit(X, y, sample_weight)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\sklearn\preprocessing\_data.py", line 766, in partial_fit
+    X = self._validate_data(X, accept_sparse=('csr', 'csc'),
+  File "C:\Users\sivag\anaconda3\lib\site-packages\sklearn\base.py", line 421, in _validate_data
+    X = check_array(X, **check_params)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\sklearn\utils\validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\sklearn\utils\validation.py", line 637, in check_array
+    raise ValueError(
+ValueError: Expected 2D array, got 1D array instead:
+array=[298.9 299.  298.9 299.  298.9 299.  298.1 298.2 298.6 298.9 298.9 299.
+ 299.  298.7 298.8 298.8 298.9 298.8 298.8 298.8 298.8 298.7 299.1 298.9
+ 298.1 298.8 298.8 298.9 298.8 298.8 298.9 299.  299.1 298.9 298.7 298.8
+ 298.8 298.9 299.  298.9 298.9 298.8 298.9 298.8 299.  298.8 298.9 298.1
+ 298.9 298.8 299.  298.6 298.2 299.  298.2 299.1 298.1 298.5 298.6 298.8
+ 298.8 298.6 298.9 298.8 298.6 298.9 298.7 298.8 298.4 298.8 298.8 299.
+ 298.8 299.  298.3].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+ 2021-09-01 01:04:40,042 -ERROR -  Exception on /dbaction [POST]
+Traceback (most recent call last):
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ 2021-09-01 01:04:40,044 -INFO -  127.0.0.1 - - [01/Sep/2021 01:04:40] "[35m[1mPOST /dbaction HTTP/1.1[0m" 500 -
+ 2021-09-01 01:05:38,889 -INFO -  Starting the dataset loading
+ 2021-09-01 01:05:38,908 -INFO -  dataset loaded successfully
+ 2021-09-01 01:05:38,921 -INFO -  Model Object created successfully
+ 2021-09-01 01:05:38,929 -INFO -  Model fit done successfully
+ 2021-09-01 01:05:38,929 -INFO -  Predicting sample entry
+ 2021-09-01 01:05:38,930 -INFO -  Predicting Air temp from user entry
+ 2021-09-01 01:05:38,930 -INFO -  predicting the air temp...
+ 2021-09-01 01:05:38,930 -INFO -  sample entry predicted with simple LR 
+ 2021-09-01 01:05:38,931 -INFO -  127.0.0.1 - - [01/Sep/2021 01:05:38] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-09-01 01:05:55,431 -INFO -  Starting the dataset loading
+ 2021-09-01 01:05:55,460 -INFO -  dataset loaded successfully
+ 2021-09-01 01:05:55,472 -INFO -  Model Object created successfully
+ 2021-09-01 01:05:55,500 -INFO -  Model fit done successfully
+ 2021-09-01 01:05:55,500 -INFO -  Predicting sample entry
+ 2021-09-01 01:05:55,500 -INFO -  Predicting Air temp from user entry
+ 2021-09-01 01:05:55,500 -INFO -  predicting the air temp...
+ 2021-09-01 01:05:55,500 -INFO -  sample entry predicted with simple LR 
+ 2021-09-01 01:05:55,501 -INFO -  127.0.0.1 - - [01/Sep/2021 01:05:55] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-09-01 01:06:19,131 -INFO -  Starting the dataset loading
+ 2021-09-01 01:06:19,150 -INFO -  dataset loaded successfully
+ 2021-09-01 01:06:19,162 -INFO -  Model Object created successfully
+ 2021-09-01 01:06:19,237 -INFO -  Model fit done successfully
+ 2021-09-01 01:06:19,237 -INFO -  Predicting sample entry
+ 2021-09-01 01:06:19,237 -INFO -  Predicting Air temp from user entry
+ 2021-09-01 01:06:19,237 -INFO -  predicting the air temp...
+ 2021-09-01 01:06:19,238 -INFO -  sample entry predicted with simple LR 
+ 2021-09-01 01:06:19,240 -INFO -  127.0.0.1 - - [01/Sep/2021 01:06:19] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-09-01 01:09:04,446 -INFO -  Starting the dataset loading
+ 2021-09-01 01:09:04,464 -INFO -  dataset loaded successfully
+ 2021-09-01 01:09:04,476 -INFO -  Model Object created successfully
+ 2021-09-01 01:09:04,484 -INFO -  Model fit done successfully
+ 2021-09-01 01:09:04,484 -INFO -  Predicting sample entry
+ 2021-09-01 01:09:04,484 -INFO -  Predicting Air temp from user entry
+ 2021-09-01 01:09:04,484 -INFO -  predicting the air temp...
+ 2021-09-01 01:09:04,484 -INFO -  sample entry predicted with simple LR 
+ 2021-09-01 01:09:04,485 -INFO -  127.0.0.1 - - [01/Sep/2021 01:09:04] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-09-01 01:09:26,843 -INFO -  Starting the dataset loading
+ 2021-09-01 01:09:26,869 -INFO -  dataset loaded successfully
+ 2021-09-01 01:09:26,881 -INFO -  Model Object created successfully
+ 2021-09-01 01:09:26,890 -INFO -  Model fit done successfully
+ 2021-09-01 01:09:26,890 -INFO -  Predicting sample entry
+ 2021-09-01 01:09:26,890 -INFO -  Predicting Air temp from user entry
+ 2021-09-01 01:09:26,891 -INFO -  predicting the air temp...
+ 2021-09-01 01:09:26,891 -INFO -  sample entry predicted with simple LR 
+ 2021-09-01 01:09:26,892 -INFO -  127.0.0.1 - - [01/Sep/2021 01:09:26] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-09-01 01:14:39,157 -INFO -  Starting the dataset loading
+ 2021-09-01 01:14:39,176 -INFO -  dataset loaded successfully
+ 2021-09-01 01:14:39,188 -INFO -  linear regression model created
+ 2021-09-01 01:14:39,916 -INFO -  Model Object created successfully
+ 2021-09-01 01:14:39,917 -INFO -  Model fit done successfully
+ 2021-09-01 01:14:39,917 -INFO -  Predicting sample entry
+ 2021-09-01 01:14:39,917 -INFO -  Predicting Air temp from user entry
+ 2021-09-01 01:14:39,917 -INFO -  predicting the air temp...
+ 2021-09-01 01:14:39,917 -INFO -  sample entry predicted with simple LR 
+ 2021-09-01 01:14:39,918 -INFO -  127.0.0.1 - - [01/Sep/2021 01:14:39] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-09-01 01:14:46,540 -INFO -  Starting the dataset loading
+ 2021-09-01 01:14:46,572 -INFO -  dataset loaded successfully
+ 2021-09-01 01:14:46,583 -INFO -  linear regression model created
+ 2021-09-01 01:14:46,583 -INFO -  Lasso linear regression model created
+ 2021-09-01 01:14:46,583 -ERROR -  Exception on /dbaction [POST]
+Traceback (most recent call last):
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ 2021-09-01 01:14:46,584 -INFO -  127.0.0.1 - - [01/Sep/2021 01:14:46] "[35m[1mPOST /dbaction HTTP/1.1[0m" 500 -
+ 2021-09-01 01:22:46,231 -INFO -  Starting the dataset loading
+ 2021-09-01 01:22:46,250 -INFO -  dataset loaded successfully
+ 2021-09-01 01:22:46,262 -INFO -  linear regression model created
+ 2021-09-01 01:22:46,262 -INFO -  Lasso linear regression model created
+ 2021-09-01 01:22:46,307 -INFO -  could not create linear object model
+ 2021-09-01 01:22:46,307 -ERROR -  __init__() got an unexpected keyword argument 'max_iter'
+Traceback (most recent call last):
+  File "C:/Users/sivag/PycharmProjects/AIPredictive_airtemp/app.py", line 118, in math_operation
+    ridgecv = RidgeCV(alphas=np.random.uniform(0, 10, 50), cv=50, max_iter=200000, normalize=True)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\sklearn\utils\validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_iter'
+ 2021-09-01 01:22:46,309 -ERROR -  Exception on /dbaction [POST]
+Traceback (most recent call last):
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ 2021-09-01 01:22:46,311 -INFO -  127.0.0.1 - - [01/Sep/2021 01:22:46] "[35m[1mPOST /dbaction HTTP/1.1[0m" 500 -
+ 2021-09-01 01:23:06,803 -INFO -  Starting the dataset loading
+ 2021-09-01 01:23:06,829 -INFO -  dataset loaded successfully
+ 2021-09-01 01:23:06,843 -INFO -  linear regression model created
+ 2021-09-01 01:23:06,844 -INFO -  Lasso linear regression model created
+ 2021-09-01 01:23:06,844 -INFO -  Ridge linear regression model created
+ 2021-09-01 01:23:06,967 -INFO -  Model Object created successfully
+ 2021-09-01 01:23:06,968 -INFO -  Model fit done successfully
+ 2021-09-01 01:23:06,968 -INFO -  Predicting sample entry
+ 2021-09-01 01:23:06,968 -INFO -  Predicting Air temp from user entry
+ 2021-09-01 01:23:06,968 -INFO -  predicting the air temp...
+ 2021-09-01 01:23:06,968 -INFO -  sample entry predicted with simple LR 
+ 2021-09-01 01:23:06,969 -INFO -  127.0.0.1 - - [01/Sep/2021 01:23:06] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-09-01 01:23:09,967 -INFO -  Starting the dataset loading
+ 2021-09-01 01:23:09,986 -INFO -  dataset loaded successfully
+ 2021-09-01 01:23:09,997 -INFO -  linear regression model created
+ 2021-09-01 01:23:10,442 -INFO -  Model Object created successfully
+ 2021-09-01 01:23:10,442 -INFO -  Model fit done successfully
+ 2021-09-01 01:23:10,442 -INFO -  Predicting sample entry
+ 2021-09-01 01:23:10,442 -INFO -  Predicting Air temp from user entry
+ 2021-09-01 01:23:10,442 -INFO -  predicting the air temp...
+ 2021-09-01 01:23:10,442 -INFO -  sample entry predicted with Lasso LR 
+ 2021-09-01 01:23:10,443 -INFO -  127.0.0.1 - - [01/Sep/2021 01:23:10] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-09-01 01:23:13,393 -INFO -  Starting the dataset loading
+ 2021-09-01 01:23:13,410 -INFO -  dataset loaded successfully
+ 2021-09-01 01:23:13,422 -INFO -  linear regression model created
+ 2021-09-01 01:23:13,422 -INFO -  Lasso linear regression model created
+ 2021-09-01 01:23:13,422 -INFO -  could not create linear object model
+ 2021-09-01 01:23:13,422 -ERROR -  __init__() got an unexpected keyword argument 'max_iter'
+Traceback (most recent call last):
+  File "C:/Users/sivag/PycharmProjects/AIPredictive_airtemp/app.py", line 118, in math_operation
+    ridgecv = RidgeCV(alphas=np.random.uniform(0, 10, 50), cv=50, max_iter=200000, normalize=True)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\sklearn\utils\validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_iter'
+ 2021-09-01 01:23:13,423 -ERROR -  Exception on /dbaction [POST]
+Traceback (most recent call last):
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\sivag\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ 2021-09-01 01:23:13,423 -INFO -  127.0.0.1 - - [01/Sep/2021 01:23:13] "[35m[1mPOST /dbaction HTTP/1.1[0m" 500 -
+ 2021-09-01 01:24:50,338 -INFO -  Starting the dataset loading
+ 2021-09-01 01:24:50,363 -INFO -  dataset loaded successfully
+ 2021-09-01 01:24:50,376 -INFO -  linear regression model created
+ 2021-09-01 01:24:50,376 -INFO -  Lasso linear regression model created
+ 2021-09-01 01:24:54,205 -INFO -  Model Object created successfully
+ 2021-09-01 01:24:54,206 -INFO -  Model fit done successfully
+ 2021-09-01 01:24:54,207 -INFO -  Predicting sample entry
+ 2021-09-01 01:24:54,207 -INFO -  Predicting Air temp from user entry
+ 2021-09-01 01:24:54,207 -INFO -  predicting the air temp...
+ 2021-09-01 01:24:54,207 -INFO -  sample entry predicted with Ridge LR 
+ 2021-09-01 01:24:54,209 -INFO -  127.0.0.1 - - [01/Sep/2021 01:24:54] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-09-01 01:28:44,336 -INFO -  Starting the dataset loading
+ 2021-09-01 01:28:44,357 -INFO -  dataset loaded successfully
+ 2021-09-01 01:28:44,369 -INFO -  linear regression model created
+ 2021-09-01 01:28:44,369 -INFO -  Lasso linear regression model created
+ 2021-09-01 01:28:44,370 -INFO -  Ridge linear regression model created
+ 2021-09-01 01:28:44,467 -INFO -  Model Object created successfully
+ 2021-09-01 01:28:44,468 -INFO -  Model fit done successfully
+ 2021-09-01 01:28:44,468 -INFO -  Predicting sample entry
+ 2021-09-01 01:28:44,468 -INFO -  Predicting Air temp from user entry
+ 2021-09-01 01:28:44,468 -INFO -  predicting the air temp...
+ 2021-09-01 01:28:44,468 -INFO -  sample entry predicted with simple LR 
+ 2021-09-01 01:28:44,471 -INFO -  127.0.0.1 - - [01/Sep/2021 01:28:44] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-09-01 01:28:44,510 -INFO -  127.0.0.1 - - [01/Sep/2021 01:28:44] "[33mGET /style.css HTTP/1.1[0m" 404 -
+ 2021-09-01 01:29:36,649 -INFO -  Starting the dataset loading
+ 2021-09-01 01:29:36,667 -INFO -  dataset loaded successfully
+ 2021-09-01 01:29:36,680 -INFO -  Model Object created successfully
+ 2021-09-01 01:29:36,689 -INFO -  Model fit done successfully
+ 2021-09-01 01:29:36,689 -INFO -  Predicting sample entry
+ 2021-09-01 01:29:36,689 -INFO -  Predicting Air temp from user entry
+ 2021-09-01 01:29:36,689 -INFO -  predicting the air temp...
+ 2021-09-01 01:29:36,690 -INFO -  sample entry predicted with simple LR 
+ 2021-09-01 01:29:36,693 -INFO -  127.0.0.1 - - [01/Sep/2021 01:29:36] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-09-01 01:29:36,728 -INFO -  127.0.0.1 - - [01/Sep/2021 01:29:36] "[33mGET /style.css HTTP/1.1[0m" 404 -
+ 2021-09-01 01:29:42,831 -INFO -  Starting the dataset loading
+ 2021-09-01 01:29:42,851 -INFO -  dataset loaded successfully
+ 2021-09-01 01:29:42,863 -INFO -  linear regression model created
+ 2021-09-01 01:29:43,313 -INFO -  Model Object created successfully
+ 2021-09-01 01:29:43,314 -INFO -  Model fit done successfully
+ 2021-09-01 01:29:43,315 -INFO -  Predicting sample entry
+ 2021-09-01 01:29:43,315 -INFO -  Predicting Air temp from user entry
+ 2021-09-01 01:29:43,315 -INFO -  predicting the air temp...
+ 2021-09-01 01:29:43,315 -INFO -  sample entry predicted with Lasso LR 
+ 2021-09-01 01:29:43,316 -INFO -  127.0.0.1 - - [01/Sep/2021 01:29:43] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-09-01 01:29:43,336 -INFO -  127.0.0.1 - - [01/Sep/2021 01:29:43] "[33mGET /style.css HTTP/1.1[0m" 404 -
+ 2021-09-01 01:29:47,039 -INFO -  Starting the dataset loading
+ 2021-09-01 01:29:47,061 -INFO -  dataset loaded successfully
+ 2021-09-01 01:29:47,074 -INFO -  linear regression model created
+ 2021-09-01 01:29:47,074 -INFO -  Lasso linear regression model created
+ 2021-09-01 01:29:50,504 -INFO -  Model Object created successfully
+ 2021-09-01 01:29:50,504 -INFO -  Model fit done successfully
+ 2021-09-01 01:29:50,505 -INFO -  Predicting sample entry
+ 2021-09-01 01:29:50,505 -INFO -  Predicting Air temp from user entry
+ 2021-09-01 01:29:50,505 -INFO -  predicting the air temp...
+ 2021-09-01 01:29:50,505 -INFO -  sample entry predicted with Ridge LR 
+ 2021-09-01 01:29:50,506 -INFO -  127.0.0.1 - - [01/Sep/2021 01:29:50] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-09-01 01:29:50,525 -INFO -  127.0.0.1 - - [01/Sep/2021 01:29:50] "[33mGET /style.css HTTP/1.1[0m" 404 -
+ 2021-09-01 01:29:54,437 -INFO -  Starting the dataset loading
+ 2021-09-01 01:29:54,461 -INFO -  dataset loaded successfully
+ 2021-09-01 01:29:54,472 -INFO -  linear regression model created
+ 2021-09-01 01:29:54,473 -INFO -  Lasso linear regression model created
+ 2021-09-01 01:29:54,473 -INFO -  Ridge linear regression model created
+ 2021-09-01 01:29:54,562 -INFO -  Model Object created successfully
+ 2021-09-01 01:29:54,563 -INFO -  Model fit done successfully
+ 2021-09-01 01:29:54,563 -INFO -  Predicting sample entry
+ 2021-09-01 01:29:54,563 -INFO -  Predicting Air temp from user entry
+ 2021-09-01 01:29:54,563 -INFO -  predicting the air temp...
+ 2021-09-01 01:29:54,563 -INFO -  sample entry predicted with simple LR 
+ 2021-09-01 01:29:54,564 -INFO -  127.0.0.1 - - [01/Sep/2021 01:29:54] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-09-01 01:29:54,584 -INFO -  127.0.0.1 - - [01/Sep/2021 01:29:54] "[33mGET /style.css HTTP/1.1[0m" 404 -
+ 2021-09-01 02:49:23,645 -INFO -  Starting the dataset loading
+ 2021-09-01 02:49:23,663 -INFO -  dataset loaded successfully
+ 2021-09-01 02:49:23,675 -INFO -  Model Object created successfully
+ 2021-09-01 02:49:23,685 -INFO -  Model fit done successfully
+ 2021-09-01 02:49:23,685 -INFO -  Predicting sample entry
+ 2021-09-01 02:49:23,686 -INFO -  Predicting Air temp from user entry
+ 2021-09-01 02:49:23,686 -INFO -  predicting the air temp...
+ 2021-09-01 02:49:23,686 -INFO -  sample entry predicted with simple LR 
+ 2021-09-01 02:49:23,690 -INFO -  127.0.0.1 - - [01/Sep/2021 02:49:23] "[37mPOST /dbaction HTTP/1.1[0m" 200 -
+ 2021-09-01 02:49:23,718 -INFO -  127.0.0.1 - - [01/Sep/2021 02:49:23] "[33mGET /style.css HTTP/1.1[0m" 404 -

@@ -1,0 +1,33 @@
+{% block head %}
+
+<title>Classification ML Model</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Air Temp Prediction</h1>
+
+    <div class="form">
+        <form action="/dbaction" method="POST">
+            <label for="operation">Choose a algo to perform prediction</label>
+
+<select id="operation" name="operation">
+  <option value="simple_lr">Simple Linear Regression</option>
+  <option value="lasso_lr">Lasso Regression</option>
+  <option value="ridge_lr">Ridge Regression</option>
+    <option value="elastic_lr">ElasticNet Regression</option>
+</select>
+                <input type="submit" value="perform prediction">
+
+</select>
+
+<!--            <div class="header">Prediction result will be shown below </div>
+
+      {{result}}
+</div>-->
+
+        </form>
+    </div>
+</div>
+{% endblock %}
